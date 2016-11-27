@@ -1,0 +1,1 @@
+ build/default/production/_ext/2036465099/putrxlcd.d  build/default/production/_ext/2036465099/putrxlcd.p1:  C:/Users/Daniel\ Phillips/MPLABXProjects/L01_814002896.X/putrxlcd.c C:/Users/Daniel\ Phillips/MPLABXProjects/L01_814002896.X/xlcd2.h

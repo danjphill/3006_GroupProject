@@ -1,0 +1,16 @@
+Error[1109] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 44 : type mismatch in redeclaration of 'OSUnMapTbl'
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 151 : symbol 'OS_OS_TRUE' has not been defined
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 190 : symbol 'OSIntExitY' has not been defined
+Error[1101] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 190 : lvalue required
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 191 : symbol 'OSIntExitY' has not been defined
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 191 : symbol 'OSIntExitY' has not been defined
+Warning[2058] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 195 : call of function without prototype
+Warning[2058] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 311 : call of function without prototype
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 385 : symbol 'OS_IDLE_PRIO' has not been defined
+Error[1109] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 464 : type mismatch in redeclaration of 'OS_EventTaskRdy'
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 679 : symbol 'OS_OS_FALSE' has not been defined
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 746 : symbol 'OS_IDLE_PRIO' has not been defined
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 799 : symbol 'OS_STAT_PRIO' has not been defined
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 1073 : symbol 'OS_NO_ERR' has not been defined
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 1110 : symbol 'OS_NO_ERR' has not been defined
+Error[1105] C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c 1113 : symbol 'OS_NO_MORE_TCB' has not been defined

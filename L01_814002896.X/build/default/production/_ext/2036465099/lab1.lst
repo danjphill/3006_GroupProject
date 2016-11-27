@@ -1,0 +1,49 @@
+
+
+Microchip Technology PIC18 Macro Assembler V1.38 build -256452561 
+                                                                                                           Thu Oct 20 23:22:41 2016
+
+
+     1                           	processor	18F452
+     2                           	opt	pw 132
+     3                           
+     4                           ;Places Message "0b110!!" in Registers
+     5  0000  EE04' F080         	lfsr	0,1152
+     6  0004  0E30               	movlw	48	;ASCII "0"
+     7  0006  6F00'              	movwf	POSTINC0,b
+     8  0008  0E62               	movlw	98	;ASCII "b"
+     9  000A  6F00'              	movwf	POSTINC0,b
+    10  000C  0E31               	movlw	49	;ASCII "1"
+    11  000E  6F00'              	movwf	POSTINC0,b
+    12  0010  6F00'              	movwf	POSTINC0,b
+    13  0012  0E30               	movlw	48	;ASCII "0"
+    14  0014  6F00'              	movwf	POSTINC0,b
+    15  0016  0E21               	movlw	33	;ASCII "!"
+    16  0018  6F00'              	movwf	POSTINC0,b
+    17  001A  6F00'              	movwf	POSTINC0,b
+    18  001C  0E00               	movlw	0	;ASCII NULL
+    19  001E  6F00'              	movwf	POSTINC0,b
+    20  0020  EE04' F080         	lfsr	0,1152	;Places the MapName memory location in the FSR
+    21  0024  5100'              	movf	MapIndex,w,b	;Gets the MapIndex Value from the c program
+    22  0026  0807               	sublw	7	;Checks of the MapIndex Value is larger than 7
+    23  0028  A100'              	btfss	STATUS,0,b	;Checks Carry flag to determine sign of the result
+    24  002A  EF00' F000'        	goto	VALUE_TOO_LARGE	;If MapIndex is larger than 7 program goes here
+    25  002E  5100'              	movf	MapIndex,w,b	;If MapIndex is smaller than 7 the character is determined
+    26  0030  5100'              	movf	PLUSW0,w,b	;Indirect Addressing to place the char in WREG
+    27  0032  0012               	return		;The character is returned
+    28  0034  0EFF               	movlw	255	;Since MapIndex greater than 7, 255 is placed in WREG
+    29  0036  0012               	return		;Initalizes the registers
+
+
+Microchip Technology PIC18 Macro Assembler V1.38 build -256452561 
+Symbol Table                                                                                               Thu Oct 20 23:22:41 2016
+
+                                                            FSR0 000000* 
+                                                            init 000000* 
+                                                          PLUSW0 000000* 
+                                                          STATUS 000000* 
+                                                         MapName 000000* 
+                                                        POSTINC0 000000* 
+                                                        MapIndex 000000* 
+                                                      getMapChar 000000* 
+                                                 VALUE_TOO_LARGE 000000* 

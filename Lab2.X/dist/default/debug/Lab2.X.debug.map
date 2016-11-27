@@ -1,0 +1,967 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Fri Nov 18 15:45:13 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+               highVector       code   0x000008    program   0x00000c
+                lowVector       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00002a    program   0x00001a
+          .code_ucos_ii.o       code   0x000044    program   0x0038fa
+         .code_os_cpu_c.o       code   0x00393e    program   0x00057a
+         .code_os_dbg_r.o       code   0x003eb8    program   0x000194
+      .code_code_lab2_2.o       code   0x00404c    program   0x00014e
+               _cinit_scn       code   0x00419a    program   0x00009e
+          .code_fxm3232.o       code   0x004238    program   0x000070
+         .code_pw1setdc.o       code   0x0042a8    program   0x00005e
+         .code_fxd3232u.o       code   0x004306    program   0x000048
+          .code_t0write.o       code   0x00434e    program   0x000038
+           .code_t0open.o       code   0x004386    program   0x000038
+           .code_t2open.o       code   0x0043be    program   0x000036
+          .code_pw1open.o       code   0x0043f4    program   0x000030
+             D10KTCYXCODE       code   0x004424    program   0x00002e
+                    .code       code   0x004452    program   0x000020
+             _startup_scn       code   0x004472    program   0x00001c
+          .code_vectors.o       code   0x00448e    program   0x00001a
+             .stringtable    romdata   0x0044a8    program   0x000002
+           .code___init.o       code   0x0044aa    program   0x000002
+         .romdata_c018i.o    romdata   0x0044ac    program   0x000000
+        .romdata_t2open.o    romdata   0x0044ac    program   0x000000
+        .romdata_t0open.o    romdata   0x0044ac    program   0x000000
+       .romdata_pw1open.o    romdata   0x0044ac    program   0x000000
+       .romdata_fxm3232.o    romdata   0x0044ac    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x0044ac    program   0x000000
+      .romdata_pw1setdc.o    romdata   0x0044ac    program   0x000000
+      .romdata_os_dbg_r.o    romdata   0x0044ac    program   0x000000
+       .romdata_t0write.o    romdata   0x0044ac    program   0x000000
+       .idata_ucos_ii.o_i    romdata   0x0044ac    program   0x000100
+       .romdata_ucos_ii.o    romdata   0x0044ac    program   0x000000
+   .romdata_code_lab2_2.o    romdata   0x0044ac    program   0x000000
+       .romdata_vectors.o    romdata   0x0044ac    program   0x000000
+       .idata_vectors.o_i    romdata   0x0044ac    program   0x000000
+        .romdata___init.o    romdata   0x0044ac    program   0x000000
+      .romdata_os_cpu_c.o    romdata   0x0044ac    program   0x000000
+       .idata_t0write.o_i    romdata   0x0045ac    program   0x000000
+      .idata_os_dbg_r.o_i    romdata   0x0045ac    program   0x000072
+      .idata_pw1setdc.o_i    romdata   0x0045ac    program   0x000000
+       .idata_pw1open.o_i    romdata   0x0045ac    program   0x000000
+        .idata_t0open.o_i    romdata   0x0045ac    program   0x000000
+        .idata_t2open.o_i    romdata   0x0045ac    program   0x000000
+        .idata___init.o_i    romdata   0x00461e    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x00461e    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x00461e    program   0x000000
+   .idata_code_lab2_2.o_i    romdata   0x00461e    program   0x000000
+      .idata_os_cpu_c.o_i    romdata   0x00461e    program   0x000000
+            .code_c018i.o       code   0x00461e    program   0x000000
+         .idata_c018i.o_i    romdata   0x00461e    program   0x000000
+                    dbgP0       code   0x007dc0    program   0x000240
+.config_300001_code_lab2_2.o    romdata   0x300001    program   0x000001
+.config_300003_code_lab2_2.o    romdata   0x300003    program   0x000001
+.config_300006_code_lab2_2.o    romdata   0x300006    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x000014
+                MATH_DATA      udata   0x000014       data   0x000010
+                DELAYDAT2      udata   0x000024       data   0x000001
+                DELAYDAT1      udata   0x000025       data   0x000001
+                   .stack      udata   0x000080       data   0x000030
+         .udata_ucos_ii.o      udata   0x0000b0       data   0x000124
+         .idata_ucos_ii.o      idata   0x0001d4       data   0x000100
+     .udata_code_lab2_2.o      udata   0x0002d4       data   0x000080
+        .idata_os_dbg_r.o      idata   0x000354       data   0x000072
+           .udata_c018i.o      udata   0x0003c6       data   0x00000a
+          .udata___init.o      udata   0x0003d0       data   0x000000
+         .idata_t0write.o      idata   0x0003d0       data   0x000000
+         .udata_t0write.o      udata   0x0003d0       data   0x000000
+        .idata_pw1setdc.o      idata   0x0003d0       data   0x000000
+        .udata_pw1setdc.o      udata   0x0003d0       data   0x000000
+          .idata_t2open.o      idata   0x0003d0       data   0x000000
+          .udata_t2open.o      udata   0x0003d0       data   0x000000
+          .idata___init.o      idata   0x0003d0       data   0x000000
+          .idata_t0open.o      idata   0x0003d0       data   0x000000
+          .udata_t0open.o      udata   0x0003d0       data   0x000000
+         .idata_pw1open.o      idata   0x0003d0       data   0x000000
+         .udata_pw1open.o      udata   0x0003d0       data   0x000000
+         .idata_fxm3232.o      idata   0x0003d0       data   0x000000
+         .udata_fxm3232.o      udata   0x0003d0       data   0x000000
+        .idata_fxd3232u.o      idata   0x0003d0       data   0x000000
+        .udata_fxd3232u.o      udata   0x0003d0       data   0x000000
+     .idata_code_lab2_2.o      idata   0x0003d0       data   0x000000
+         .idata_vectors.o      idata   0x0003d0       data   0x000000
+         .udata_vectors.o      udata   0x0003d0       data   0x000000
+        .idata_os_cpu_c.o      idata   0x0003d0       data   0x000000
+        .udata_os_cpu_c.o      udata   0x0003d0       data   0x000000
+        .udata_os_dbg_r.o      udata   0x0003d0       data   0x000000
+           .idata_c018i.o      idata   0x0003d0       data   0x000000
+                    dbgD0      udata   0x0005f4       data   0x00000c
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x000013      
+                            0x000018    0x00001d      
+                            0x00002a    0x00461d      
+                            0x007dc0    0x007fff      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+                            0x300006    0x300006      
+            18511 out of 33048 program addresses used, program memory utilization is 56%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+     CPUhighInterruptHook   0x0044a2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\vectors.c
+            CPUhighVector   0x000008    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+          CPUlowInterrupt   0x003d5e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+      CPUlowInterruptHook   0x00448e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\vectors.c
+             CPUlowVector   0x000018    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+                   D10K_1   0x004430    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00443c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00442e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+             Delay10KTCYx   0x004424    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+            DelayFor18TCY   0x00404c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+             DelayPORXLCD   0x004098    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                DelayXLCD   0x0040b0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                 FXD3232U   0x004306    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  FXM3232   0x004238    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                  OSCtxSw   0x003c68    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+              OSDebugInit   0x003eb8    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSEventNameGet   0x000044    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OSEventNameSet   0x000138    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+         OSEventPendMulti   0x0001e8    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                   OSInit   0x0006c4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+          OSInitHookBegin   0x003be0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSInitHookEnd   0x003be2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+               OSIntCtxSw   0x003df0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+               OSIntEnter   0x0006e6    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                OSIntExit   0x0006fa    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+            OSMutexAccept   0x001ac6    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+            OSMutexCreate   0x001c50    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+               OSMutexDel   0x001dfc    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+              OSMutexPend   0x0021dc    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+              OSMutexPost   0x002918    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+             OSMutexQuery   0x002b56    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+        OSMutex_RdyAtPrio   0x002d40    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+              OSSchedLock   0x000788    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+            OSSchedUnlock   0x0007d4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                  OSStart   0x00083c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OSStartHighRdy   0x003be4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSTCBInitHook   0x003bc2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+             OSTaskCreate   0x002f3e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+         OSTaskCreateHook   0x003b52    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSTaskDelHook   0x003b6e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+           OSTaskIdleHook   0x003bde    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+             OSTaskResume   0x0030c2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+         OSTaskReturnHook   0x003b8a    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+           OSTaskStatHook   0x003baa    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSTaskStkInit   0x00393e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSTaskSuspend   0x003230    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+             OSTaskSwHook   0x003ba6    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+                OSTimeDly   0x0033da    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+            OSTimeDlyHMSM   0x0034cc    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+          OSTimeDlyResume   0x0036ba    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+                OSTimeGet   0x003876    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+                OSTimeSet   0x0038f2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+               OSTimeTick   0x000876    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OSTimeTickHook   0x003bac    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+                OSVersion   0x000aa4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+          OS_EventTaskRdy   0x000ab0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+       OS_EventTaskRemove   0x000f24    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+  OS_EventTaskRemoveMulti   0x001000    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+         OS_EventTaskWait   0x000cb2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+    OS_EventTaskWaitMulti   0x000daa    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+     OS_EventWaitListInit   0x00115c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+         OS_InitEventList   0x0011ca    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+              OS_InitMisc   0x001372    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OS_InitRdyList   0x0013a2    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OS_InitTCBList   0x001428    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+          OS_InitTaskIdle   0x0013f4    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                OS_MemClr   0x001548    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+               OS_MemCopy   0x00159c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                 OS_Sched   0x00160a    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+              OS_SchedNew   0x001684    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                OS_StrLen   0x0016de    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+               OS_TCBInit   0x001780    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+              OS_TaskIdle   0x001722    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+            OS_TaskReturn   0x0033b2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+                 OpenPWM1   0x0043f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1open.c
+         OpenPWM1ConfigIO   0x004420    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1open.c
+               OpenTimer0   0x004386    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+               OpenTimer2   0x0043be    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t2open.c
+                SetDCPWM1   0x0042a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1setdc.c
+                    TaskA   0x0040c8    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                    TaskB   0x004124    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+              WriteTimer0   0x00434e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+       _D10KTCYXCODE_0010   0x004434    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x004440    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+           ___do_lbl00015   0x003c20    program     static                          
+           ___do_lbl00016   0x003c24    program     static                          
+           ___do_lbl00017   0x003c12    program     static                          
+           ___do_lbl00022   0x003d16    program     static                          
+           ___do_lbl00023   0x003d1a    program     static                          
+           ___do_lbl00024   0x003d08    program     static                          
+           ___do_lbl00035   0x003e70    program     static                          
+           ___do_lbl00036   0x003e74    program     static                          
+           ___do_lbl00037   0x003e62    program     static                          
+          ___for_lbl00001   0x00407e    program     static                          
+          ___for_lbl00002   0x004088    program     static                          
+          ___for_lbl00003   0x004064    program     static                          
+           ___if_lbl00014   0x003c0c    program     static                          
+           ___if_lbl00021   0x003cd4    program     static                          
+           ___if_lbl00031   0x003e1e    program     static                          
+           ___if_lbl00034   0x003e5c    program     static                          
+       ___return_lbl00000   0x00434c    program     static                          
+       ___return_lbl00000   0x0042a6    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x004088    program     static                          
+       ___return_lbl00001   0x00448c    program     static                          
+       ___return_lbl00002   0x004236    program     static                          
+       ___return_lbl00004   0x003ba8    program     static                          
+       ___return_lbl00011   0x003c66    program     static                          
+       ___return_lbl00018   0x003d5c    program     static                          
+       ___return_lbl00025   0x000012    program     static                          
+       ___return_lbl00026   0x00001c    program     static                          
+       ___return_lbl00027   0x003dee    program     static                          
+       ___return_lbl00028   0x003eb6    program     static                          
+        ___while_lbl00012   0x003bfc    program     static                          
+        ___while_lbl00013   0x003c06    program     static                          
+        ___while_lbl00019   0x003cb2    program     static                          
+        ___while_lbl00020   0x003cca    program     static                          
+        ___while_lbl00029   0x003dfc    program     static                          
+        ___while_lbl00030   0x003e14    program     static                          
+        ___while_lbl00032   0x003e4c    program     static                          
+        ___while_lbl00033   0x003e56    program     static                          
+               __config_0   0x300001    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+               __config_1   0x300003    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+               __config_2   0x300006    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                   __init   0x0044aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __string_0   0x0044a8    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+            __zero_memory   0x004452    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                _do_cinit   0x00419a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _false   0x004348    program     static                          
+                 _startup   0x004472    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x004468    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                copy_loop   0x00420c    program     static                          
+            copy_one_byte   0x004212    program     static                          
+                     done   0x004236    program     static                          
+             done_copying   0x004220    program     static                          
+                     loop   0x004314    program     static                          
+                     loop   0x004482    program     static                          
+                   loop_h   0x004460    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x00446a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     main   0x004140    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                     test   0x0041b4    program     static                          
+               zero_block   0x004460    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+            DelayCounter1   0x000025       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCtxSwCtr   0x0000b0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+               OSDataSize   0x0003c4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSDebugEn   0x000354       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+         OSEndiannessTest   0x000356       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSEventEn   0x00035a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+          OSEventFreeList   0x0000b4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+               OSEventMax   0x00035c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSEventMultiEn   0x000364       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+            OSEventNameEn   0x00035e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSEventSize   0x000360       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+               OSEventTbl   0x0000b6       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+           OSEventTblSize   0x000362       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSFlagEn   0x000366       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+            OSFlagGrpSize   0x000368       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSFlagMax   0x00036e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSFlagNameEn   0x000370       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSFlagNodeSize   0x00036a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSFlagWidth   0x00036c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSIdleCtr   0x0000d0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSIntNesting   0x0000c8       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSLockNesting   0x0000c9       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSLowestPrio   0x000372       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSMboxEn   0x000374       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                  OSMemEn   0x000376       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSMemMax   0x000378       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSMemNameEn   0x00037a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSMemSize   0x00037c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSMemTblSize   0x00037e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSMutexEn   0x000380       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSPrioCur   0x0000ca       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSPrioHighRdy   0x0000cb       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                OSPtrSize   0x000382       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                    OSQEn   0x000384       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                   OSQMax   0x000386       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                  OSQSize   0x000388       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSRdyGrp   0x0000cc       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                 OSRdyTbl   0x0000cd       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSRdyTblSize   0x00038a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSRunning   0x0000ce       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                  OSSemEn   0x00038c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+               OSStkWidth   0x00038e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSTCBCur   0x000154       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSTCBFreeList   0x000156       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSTCBHighRdy   0x000158       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                OSTCBList   0x00015a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSTCBPrioTbl   0x00015c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+          OSTCBPrioTblMax   0x0003a8       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSTCBSize   0x0003aa       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSTCBTbl   0x000166       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+           OSTaskCreateEn   0x000390       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTaskCreateExtEn   0x000392       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSTaskCtr   0x0000cf       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+              OSTaskDelEn   0x000394       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+            OSTaskIdleStk   0x0000d4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+        OSTaskIdleStkSize   0x000396       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSTaskMax   0x00039a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSTaskNameEn   0x00039c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+          OSTaskProfileEn   0x000398       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+         OSTaskRegTblSize   0x0003a6       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSTaskStatEn   0x00039e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+       OSTaskStatStkChkEn   0x0003a2       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTaskStatStkSize   0x0003a0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSTaskSwHookEn   0x0003a4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+          OSTickStepState   0x0001cf       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSTicksPerSec   0x0003ac       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                   OSTime   0x0001d0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+         OSTimeTickHookEn   0x0003ae       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSTmrCfgMax   0x0003b4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSTmrCfgNameEn   0x0003b6       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+      OSTmrCfgTicksPerSec   0x0003ba       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTmrCfgWheelSize   0x0003b8       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                  OSTmrEn   0x0003b2       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSTmrSize   0x0003bc       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSTmrTblSize   0x0003be       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSTmrWheelSize   0x0003c0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTmrWheelTblSize   0x0003c2       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+               OSUnMapTbl   0x0001d4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+             OSVersionNbr   0x0003b0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     SIGN   0x000022       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 TaskAStk   0x0002d4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 __AARGB0   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x00001a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x000020       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x000021       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __tmp_0   0x000000       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1setdc.c
+                  __tmp_0   0x000000       data     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                  __tmp_0   0x000000       data     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+                  __tmp_0   0x000000       data     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+                curr_byte   0x0003c9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0003cb       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0003cd       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     prom   0x0003c6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+            CPUhighVector   0x000008    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+       ___return_lbl00025   0x000012    program     static                          
+             CPUlowVector   0x000018    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+       ___return_lbl00026   0x00001c    program     static                          
+           OSEventNameGet   0x000044    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OSEventNameSet   0x000138    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+         OSEventPendMulti   0x0001e8    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                   OSInit   0x0006c4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+               OSIntEnter   0x0006e6    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                OSIntExit   0x0006fa    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+              OSSchedLock   0x000788    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+            OSSchedUnlock   0x0007d4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                  OSStart   0x00083c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+               OSTimeTick   0x000876    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                OSVersion   0x000aa4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+          OS_EventTaskRdy   0x000ab0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+         OS_EventTaskWait   0x000cb2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+    OS_EventTaskWaitMulti   0x000daa    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+       OS_EventTaskRemove   0x000f24    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+  OS_EventTaskRemoveMulti   0x001000    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+     OS_EventWaitListInit   0x00115c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+         OS_InitEventList   0x0011ca    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+              OS_InitMisc   0x001372    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OS_InitRdyList   0x0013a2    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+          OS_InitTaskIdle   0x0013f4    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+           OS_InitTCBList   0x001428    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                OS_MemClr   0x001548    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+               OS_MemCopy   0x00159c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                 OS_Sched   0x00160a    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+              OS_SchedNew   0x001684    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                OS_StrLen   0x0016de    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+              OS_TaskIdle   0x001722    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+               OS_TCBInit   0x001780    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+            OSMutexAccept   0x001ac6    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+            OSMutexCreate   0x001c50    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+               OSMutexDel   0x001dfc    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+              OSMutexPend   0x0021dc    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+              OSMutexPost   0x002918    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+             OSMutexQuery   0x002b56    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+        OSMutex_RdyAtPrio   0x002d40    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_mutex.c
+             OSTaskCreate   0x002f3e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+             OSTaskResume   0x0030c2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+            OSTaskSuspend   0x003230    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+            OS_TaskReturn   0x0033b2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_task.c
+                OSTimeDly   0x0033da    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+            OSTimeDlyHMSM   0x0034cc    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+          OSTimeDlyResume   0x0036ba    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+                OSTimeGet   0x003876    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+                OSTimeSet   0x0038f2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+            OSTaskStkInit   0x00393e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+         OSTaskCreateHook   0x003b52    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSTaskDelHook   0x003b6e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+         OSTaskReturnHook   0x003b8a    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+             OSTaskSwHook   0x003ba6    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+       ___return_lbl00004   0x003ba8    program     static                          
+           OSTaskStatHook   0x003baa    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+           OSTimeTickHook   0x003bac    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSTCBInitHook   0x003bc2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+           OSTaskIdleHook   0x003bde    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+          OSInitHookBegin   0x003be0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+            OSInitHookEnd   0x003be2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+           OSStartHighRdy   0x003be4    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+        ___while_lbl00012   0x003bfc    program     static                          
+        ___while_lbl00013   0x003c06    program     static                          
+           ___if_lbl00014   0x003c0c    program     static                          
+           ___do_lbl00017   0x003c12    program     static                          
+           ___do_lbl00015   0x003c20    program     static                          
+           ___do_lbl00016   0x003c24    program     static                          
+       ___return_lbl00011   0x003c66    program     static                          
+                  OSCtxSw   0x003c68    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+        ___while_lbl00019   0x003cb2    program     static                          
+        ___while_lbl00020   0x003cca    program     static                          
+           ___if_lbl00021   0x003cd4    program     static                          
+           ___do_lbl00024   0x003d08    program     static                          
+           ___do_lbl00022   0x003d16    program     static                          
+           ___do_lbl00023   0x003d1a    program     static                          
+       ___return_lbl00018   0x003d5c    program     static                          
+          CPUlowInterrupt   0x003d5e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+       ___return_lbl00027   0x003dee    program     static                          
+               OSIntCtxSw   0x003df0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+        ___while_lbl00029   0x003dfc    program     static                          
+        ___while_lbl00030   0x003e14    program     static                          
+           ___if_lbl00031   0x003e1e    program     static                          
+        ___while_lbl00032   0x003e4c    program     static                          
+        ___while_lbl00033   0x003e56    program     static                          
+           ___if_lbl00034   0x003e5c    program     static                          
+           ___do_lbl00037   0x003e62    program     static                          
+           ___do_lbl00035   0x003e70    program     static                          
+           ___do_lbl00036   0x003e74    program     static                          
+       ___return_lbl00028   0x003eb6    program     static                          
+              OSDebugInit   0x003eb8    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+            DelayFor18TCY   0x00404c    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+          ___for_lbl00003   0x004064    program     static                          
+          ___for_lbl00001   0x00407e    program     static                          
+          ___for_lbl00002   0x004088    program     static                          
+       ___return_lbl00000   0x004088    program     static                          
+             DelayPORXLCD   0x004098    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                DelayXLCD   0x0040b0    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                    TaskA   0x0040c8    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                    TaskB   0x004124    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                     main   0x004140    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                _do_cinit   0x00419a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0041b4    program     static                          
+                copy_loop   0x00420c    program     static                          
+            copy_one_byte   0x004212    program     static                          
+             done_copying   0x004220    program     static                          
+       ___return_lbl00002   0x004236    program     static                          
+                     done   0x004236    program     static                          
+                  FXM3232   0x004238    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x0042a6    program     static                          
+                SetDCPWM1   0x0042a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1setdc.c
+                 FXD3232U   0x004306    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x004314    program     static                          
+                   _false   0x004348    program     static                          
+       ___return_lbl00000   0x00434c    program     static                          
+              WriteTimer0   0x00434e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+               OpenTimer0   0x004386    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+               OpenTimer2   0x0043be    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t2open.c
+                 OpenPWM1   0x0043f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1open.c
+         OpenPWM1ConfigIO   0x004420    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1open.c
+             Delay10KTCYx   0x004424    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00442e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x004430    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x004434    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00443c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x004440    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+            __zero_memory   0x004452    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_h   0x004460    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x004460    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                compare_l   0x004468    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x00446a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 _startup   0x004472    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x004482    program     static                          
+       ___return_lbl00001   0x00448c    program     static                          
+      CPUlowInterruptHook   0x00448e    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\vectors.c
+     CPUhighInterruptHook   0x0044a2    program     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\vectors.c
+               __string_0   0x0044a8    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+                   __init   0x0044aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+               __config_1   0x300003    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+               __config_2   0x300006    program     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                  __tmp_0   0x000000       data     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_time.c
+                  __tmp_0   0x000000       data     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_cpu_c.c
+                  __tmp_0   0x000000       data     static C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                  __tmp_0   0x000000       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PWM\pw1setdc.c
+                 __AARGB7   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x00001a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x000020       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x000021       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                     SIGN   0x000022       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            DelayCounter2   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000025       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+               OSCtxSwCtr   0x0000b0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+          OSEventFreeList   0x0000b4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+               OSEventTbl   0x0000b6       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSIntNesting   0x0000c8       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSLockNesting   0x0000c9       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                OSPrioCur   0x0000ca       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSPrioHighRdy   0x0000cb       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                 OSRdyGrp   0x0000cc       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                 OSRdyTbl   0x0000cd       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                OSRunning   0x0000ce       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                OSTaskCtr   0x0000cf       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                OSIdleCtr   0x0000d0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSTaskIdleStk   0x0000d4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                 OSTCBCur   0x000154       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+            OSTCBFreeList   0x000156       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSTCBHighRdy   0x000158       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                OSTCBList   0x00015a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+             OSTCBPrioTbl   0x00015c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                 OSTCBTbl   0x000166       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+          OSTickStepState   0x0001cf       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+                   OSTime   0x0001d0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\ucos_ii.h
+               OSUnMapTbl   0x0001d4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_core.c
+                 TaskAStk   0x0002d4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\code_lab2_2.c
+                OSDebugEn   0x000354       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+         OSEndiannessTest   0x000356       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSEventEn   0x00035a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+               OSEventMax   0x00035c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+            OSEventNameEn   0x00035e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSEventSize   0x000360       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSEventTblSize   0x000362       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSEventMultiEn   0x000364       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSFlagEn   0x000366       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+            OSFlagGrpSize   0x000368       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSFlagNodeSize   0x00036a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSFlagWidth   0x00036c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSFlagMax   0x00036e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSFlagNameEn   0x000370       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSLowestPrio   0x000372       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSMboxEn   0x000374       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                  OSMemEn   0x000376       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                 OSMemMax   0x000378       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSMemNameEn   0x00037a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSMemSize   0x00037c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSMemTblSize   0x00037e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSMutexEn   0x000380       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSPtrSize   0x000382       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                    OSQEn   0x000384       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                   OSQMax   0x000386       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                  OSQSize   0x000388       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSRdyTblSize   0x00038a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                  OSSemEn   0x00038c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+               OSStkWidth   0x00038e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSTaskCreateEn   0x000390       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTaskCreateExtEn   0x000392       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSTaskDelEn   0x000394       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTaskIdleStkSize   0x000396       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+          OSTaskProfileEn   0x000398       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSTaskMax   0x00039a       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSTaskNameEn   0x00039c       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSTaskStatEn   0x00039e       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTaskStatStkSize   0x0003a0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+       OSTaskStatStkChkEn   0x0003a2       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSTaskSwHookEn   0x0003a4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+         OSTaskRegTblSize   0x0003a6       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+          OSTCBPrioTblMax   0x0003a8       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSTCBSize   0x0003aa       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+            OSTicksPerSec   0x0003ac       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+         OSTimeTickHookEn   0x0003ae       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSVersionNbr   0x0003b0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                  OSTmrEn   0x0003b2       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+              OSTmrCfgMax   0x0003b4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSTmrCfgNameEn   0x0003b6       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTmrCfgWheelSize   0x0003b8       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+      OSTmrCfgTicksPerSec   0x0003ba       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                OSTmrSize   0x0003bc       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+             OSTmrTblSize   0x0003be       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+           OSTmrWheelSize   0x0003c0       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+        OSTmrWheelTblSize   0x0003c2       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+               OSDataSize   0x0003c4       data     extern C:\Users\Daniel Phillips\Documents\UWI\Year 3\ECNG 3006\Projects\Lab2.X\os_dbg_r.c
+                     prom   0x0003c6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0003c9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0003cb       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0003cd       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+
+
